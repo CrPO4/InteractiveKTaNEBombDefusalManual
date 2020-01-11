@@ -2,7 +2,8 @@
   "ActiveLanguage": "ru_RU",
   "ru_RU": {
     "LanguageName": "Русский",
-    "MainWindowName": "Руководство по обезвреживанию бомб для KTaNE",
+    "MainWindowName": "Руководство по обезвреживанию бомб",
+    "ConsoleWindowName": "Окно вывода информации",
     "ModuleNames": {
       "EasyWires": "Модуль \"Простые провода\"",
       "TheButton": "Кнопка",
@@ -60,29 +61,31 @@
       }
     }
   },
+
+
   "en_US": {
     "LanguageName": "English",
-    "MainWindowName": "Bomb defusal manual for KTaNE",
+    "MainWindowName": "Bomb defusal manual",
     "ModuleNames": {
-      "EasyWires": "Module \"Простые провода\"",
-      "TheButton": "Кнопка",
-      "Keypad": "Клавишные панели",
-      "Simon": "Саймон говорит",
-      "WhosOnFirst": "А вас как зовут?",
-      "Memory": "Память",
-      "Morse": "Азбука Морзе",
-      "ComplicatedWires": "Усложненные провода",
-      "WireSequences": "Последовательности проводов",
-      "Maze": "Лабиринты",
-      "Password": "Пароли",
-      "Gas": "Выпуск газа",
-      "Capacitor": "Разрядка конденсатора",
-      "Knob": "Поворотная ручка"
+      "EasyWires": "Easy Wires",
+      "TheButton": "The Button",
+      "Keypad": "Keypad",
+      "Simon": "Simon Says",
+      "WhosOnFirst": "Who's on First?",
+      "Memory": "Memory",
+      "Morse": "Morse Code",
+      "ComplicatedWires": "Complicated Wires",
+      "WireSequences": "Wire Sequences",
+      "Maze": "Maze",
+      "Password": "Password",
+      "Gas": "Venting Gas",
+      "Capacitor": "Capacitor Discharge",
+      "Knob": "Rotating Knob"
     },
     "AdditionalInfo": {
-      "Indicator": "Индикаторы",
-      "Battery": "Батарейки",
-      "Port": "Порты"
+      "Indicator": "Indicators",
+      "Battery": "Batteries",
+      "Port": "Ports"
     },
     "EasyWires": {
       "Epigraph": "Провода - кровь электроники! Стоп, нет, кровь — это электричество. Провода, скорее, артерии. Вены? Не важно...",
@@ -98,7 +101,7 @@
       },
       "Wires4": {
         "Description": "Если провода 4:",
-        "Case1": "Если красных проводов больше, чем один, и последняя цифра серийного номера нечетная, режьте последний красный.",
+        "Case1": "Если красных проводов больше, чем один, и последняя цифра серийного номера нечетная, режьте последний красный. FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
         "Case2": "Иначе, если последний провод желтый, а красных проводов нет, режьте первый.",
         "Case3": "Иначе, если синий провод всего один, режьте первый.",
         "Case4": "Иначе, если желтых проводов больше, чем один, режьте последний.",

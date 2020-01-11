@@ -18,8 +18,9 @@ namespace InteractiveKTaNEBombDefusalManual
 
         static public class GlobalVariables
         {
-          public static JObject json = JObject.Parse(File.ReadAllText(@"Resources/i10n.json"));
+          public static JObject json = JObject.Parse(File.ReadAllText(@"Resources/i18n.json"));
           public static string activeLanguage = GlobalVariables.json["ActiveLanguage"].ToString();
+          public static FormEasyWires frmEasyWires = new FormEasyWires();
         }
 
 
@@ -45,6 +46,18 @@ namespace InteractiveKTaNEBombDefusalManual
 
         private void Loadi10n(string activeLanguage)
         {
+            SetLanguage(activeLanguage);
+            GlobalVariables.frmEasyWires.SetLanguage();
+        }
+
+        private void BtnEasyWires_Click(object sender, EventArgs e)
+        {
+            GlobalVariables.frmEasyWires.Show();
+            GlobalVariables.frmEasyWires.SetDesktopLocation(this.Location.X + this.Size.Width, this.Location.Y);
+        }
+
+        public void SetLanguage(string activeLanguage)
+        {
             this.Text = GlobalVariables.json[activeLanguage]["MainWindowName"].ToString();
             BtnEasyWires.Text = GlobalVariables.json[activeLanguage]["ModuleNames"]["EasyWires"].ToString();
             BtnTheButton.Text = GlobalVariables.json[activeLanguage]["ModuleNames"]["TheButton"].ToString();
@@ -63,19 +76,6 @@ namespace InteractiveKTaNEBombDefusalManual
             BtnIndicator.Text = GlobalVariables.json[activeLanguage]["AdditionalInfo"]["Indicator"].ToString();
             BtnBattery.Text = GlobalVariables.json[activeLanguage]["AdditionalInfo"]["Battery"].ToString();
             BtnPort.Text = GlobalVariables.json[activeLanguage]["AdditionalInfo"]["Port"].ToString();
-        }
-
-        private void BtnEasyWires_Click(object sender, EventArgs e)
-        {
-            ModuleForms.FormEasyWires.ActiveForm.Show();
-            FormEasyWires frmEasyWires = new FormEasyWires();
-            frmEasyWires.Show();
-            frmEasyWires.SetDesktopLocation(this.Location.X + this.Size.Width, this.Location.Y);
-        }
-
-        private void MainWindow_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

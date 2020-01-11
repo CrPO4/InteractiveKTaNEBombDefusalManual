@@ -244,7 +244,6 @@
             this.Controls.Add(this.panelMainMenu);
             this.Name = "MainWindow";
             this.Text = "MainWindow";
-            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.panelMainMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 
